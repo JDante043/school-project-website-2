@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./store.css">
+    <script src="./store.js"></script>
+    <title>Store</title>
+</head>
+<body onload="checkprice()">
+    <header>
+        <div id="header-left">
+            <a href="./index.html">
+                <img src="./resources/violet.jpg" width="600">
+            </a>
+        </div>
+
+        <div id="header-right">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>    
+                    <a href="./about.html">About me</a>
+                </li>
+                <li>
+                    <a href="./store.html">Store</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="content-main">
+        <img src="./resources/framework.png">
+
+        <div id="form">
+            <label>Full name:</label>
+            <input id="nameinput" class="item" type="text"><br><br>
+            <label>Address:</label>
+            <input id="addressinput" class="item" type="text"><br><br>
+            <label>CPU manufacturer:</label>
+            <select id="cpuinput">
+                <option value="Intel" onclick="checkprice()" selected>Intel</option>
+                <option value="AMD" onclick="checkprice()">AMD</option>
+            </select>
+            <br><br>
+            <label>GPU manufacturer:</label>
+            <select id="gpuinput">
+                <option value="Integrated" onclick="checkprice()" selected>Integrated</option>
+                <option value="Intel" onclick="checkprice()">Intel</option>
+                <option value="AMD" onclick="checkprice()">AMD</option>
+                <option value="Nvidia" onclick="checkprice()">Nvidia</option>
+            </select>
+
+            <p id="totalprice"></p>
+            </div>
+
+            <div id="formbutton">
+                  <button onclick="verification()">Buy now</button>
+            </div>
+    </div>  
+
+    <footer>
+        <div id="copyright">
+            <h4>No copyright, you can steal this website @ DannB 2023</h4>
+        </div>
+    </footer>
+</body>
+</html>
